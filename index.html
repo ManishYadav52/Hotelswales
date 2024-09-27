@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
+    <!-- font-awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Hotelwale</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(255, 255, 255, 0.248);">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="./assets/logo.png" alt="logo" width="30px">
+                    otelwale
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hotellist">Hotelslist</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <h1>Welcome to Hotelswale</h1>
+            <p>Discover the perfect blend of luxury, comfort, and convenience at Hotelwale. Nestled in the heart <br> of
+                noida, our hotel offers a warm welcome and exceptional service <br> that will make your stay
+                unforgettable.</p>
+            <button onclick="opencontact()">Book Your Stay</button>
+        </div>
+    </header>
+
+    <section id="about" class="py-4">
+        <h1 class="text-center py-4"><i class="fa-solid fa-umbrella-beach"></i> About <i
+                class="fa-solid fa-umbrella-beach"></i></h1>
+        <div class="container row">
+            <div class="col-sm-4 " data-aos="fade-right" data-aos-delay="150" data-aos-duration="2000"style="height: 400px;">
+                <img src="https://images.pexels.com/photos/2957461/pexels-photo-2957461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="" width="100%" height="100%">
+            </div>
+            <div class="col-sm-8 pt-5 text-center" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="150">
+                <h3>Aapka Perfect Hotel Yahan Hai</h3>
+                <p>Hotelwale website par aapko milega har tarah ka hotel, chahe aapki manzil kisi bhi shahar mein ho.
+                    Hamari saari listings detail mein hain, jismein facilities, ratings aur asli reviews shamil hain.
+                    Aasan search options ke zariye apni zarooraton ke mutabiq best hotel dhundhein. Booking karne ka
+                    process bhi asan hai, jisse aap apne safar ko bina kisi pareshani ke enjoy kar sakein. Aaj hi apna
+                    ideal hotel book karein!</p>
+                <button>Ab Book Karein!</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="Features">
+        <div class="container px-4 py-5" id="custom-cards">
+            <h1 class="text-center py-4 border-bottom"><i class="fa-solid fa-umbrella-beach"></i> Features <i
+                class="fa-solid fa-umbrella-beach"></i></h1>
+        
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://images.pexels.com/photos/2096983/pexels-photo-2096983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Aapka Safar, Hamara Hotel Saath</h2>
+                  </div>
+                </div>
+              </div>
+
+        
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://images.pexels.com/photos/53464/sheraton-palace-hotel-lobby-architecture-san-francisco-53464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Best Hotels, Best Prices Yahan</h2>
+                   
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://images.pexels.com/photos/70441/pexels-photo-70441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Safar Ki Shuruaat Hotelwale Se</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+    <section id="hotellist">
+        <div class="container">
+
+          <h1 class="text-center py-4 border-bottom"><i class="fa-solid fa-umbrella-beach"></i> HotelsList <i
+            class="fa-solid fa-umbrella-beach"></i></h1>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="Taj_Mahal_Palace_Hotel.jpg" alt="" width="100%" height="225">     
+                  <div class="card-body">
+                    <p class="card-text fw-bold">Taj Hotel</p>
+                    <p>Taj Hotels is a chain of luxury hotels and a subsidiary of the Indian Hotels Company Limited,headquartered in Mumbai, India.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href=""><button type="button" class="btn btn-sm btn-outline-secondary">Read More</button></a>
+                      </div>
+                      <small class="text-muted fw-bold">$4999</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="hotel-420260_1280.jpg" alt="" width="100%" height="225">     
+                  <div class="card-body">
+                    <p class="card-text fw-bold">Imperial Hotel</p>
+                    <p>The Imperial Hotel is a hotel on the east side of Russell Square, a branch of Imperial London Hotels in the Bloomsbury area.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
+                      </div>
+                      <small class="text-muted fw-bold">$3999</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="hotel-928937_1280.jpg" alt="" width="100%" height="225">     
+                  <div class="card-body">
+                    <p class="card-text fw-bold">Mandarian Hotel</p>
+                    <p>The Mandarin Oriental name was established in 1985 following the merger of Mandarin International Hotels and the holding company of the hotel The Oriental.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
+                      </div>
+                      <small class="text-muted fw-bold">$4599</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="landscape-2016308_1280.jpg" alt="" width="100%" height="225">     
+                  <div class="card-body">
+                    <p class="card-text fw-bold">Hyatt Hotel</p>
+                    <p>commonly known as Hyatt Hotels & Resorts, is an American multinational hospitality company headquartered in the Riverside Plaza area of Chicago</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
+                      </div>
+                      <small class="text-muted fw-bold">$2999</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="manor-house-2359884_1280.jpg" alt="" width="100%" height="225">     
+                  <div class="card-body">
+                    <p class="card-text fw-bold">Carlton Hotel</p>
+                    <p>is a Dubai based multinational hospitality company that manages hotels mostly in the Middle East and across Europe.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
+                      </div>
+                      <small class="text-muted fw-bold">$1999</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="swimming-pool-2128578_1280.jpg" alt="" width="100%" height="225">     
+                  <div class="card-body">
+                    <p class="card-text fw-bold">Marriott Hotel</p>
+                    <p>s an American multinational company that operates, franchises, and licenses lodging brands that include hotel, residential, and timeshare properties.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Read More</button>
+                      </div>
+                      <small class="text-muted fw-bold">$5999</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+    </section>
+
+    <footer>
+      <div class="py-4">
+        <p class="text-center">@ 2024 Copyright. || Hotelswale</p>
+      </div>
+    </footer>
+    <button class="topbtn"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        <script>
+          ////////////////////////////////// top scroll ////////////////////////////////////////// 
+ const button = document.querySelector('.topbtn');
+ 
+ const displayButton = () => {
+   window.addEventListener('scroll', () => {
+     console.log(window.scrollY);
+   
+     if (window.scrollY > 100) {
+       button.style.display = "block";
+     } else {
+       button.style.display = "none";
+     }
+   });
+ };
+ 
+ const scrollToTop = () => {
+   button.addEventListener("click", () => {
+     window.scroll({
+       top: 0,
+       left: 0,
+       behavior: 'smooth'
+     }); 
+     console.log(event);
+   });
+ };
+ 
+ displayButton();
+ scrollToTop();
+ 
+     </script>
+
+
+<script>
+  function opencontact(){
+    open("contact.html")
+  }
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+
+</html>

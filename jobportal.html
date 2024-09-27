@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Searching for Job</title> 
+    <link rel="stylesheet" href="job.css"> 
+</head> 
+
+<body> 
+    <header> 
+        <h1>Innovative Talent Acquisition Platform</h1> 
+    </header> 
+
+    <nav> 
+        <ul> 
+            <li><a href="#">Home</a></li> 
+            <li><a href="#">Jobs</a></li> 
+            <li><a href="#">Companies</a></li> 
+            <li><a href="#">About Us</a></li> 
+            <li><a href="#">Contact</a></li> 
+        </ul> 
+    </nav> 
+
+    <section class="search"> 
+        <h2>Find Your Dream Job</h2> 
+        <form id="jobSearchForm"> 
+            <input type="text" name="keywords" placeholder="Keywords"> 
+            <input type="text" name="location" placeholder="Location"> 
+            <input type="text" name="company" placeholder="Company"> 
+            <button type="submit">Search</button> 
+        </form> 
+        <div id="searchResults"></div>
+    </section> 
+
+    <section class="job-listings"> 
+        <h2>Latest Job Listings</h2> 
+        <ul id="jobList"> 
+            <li> 
+                <h3>Senior Software Developer</h3> 
+                <p>Company: Microsoft</p> 
+                <p>Location: India</p> 
+                <p>Description: Good Web Developer</p> 
+                <a href="https://jobs.careers.microsoft.com/us/en/job/1690902/Senior-Software-Engineer-Front-end-?jobsource=linkedin">Apply Now</a> 
+            </li> 
+            <li> 
+                <h3>Graphic Designer</h3> 
+                <p>Company: XYZ Design</p> 
+                <p>Location: India</p> 
+                <p>Description: Good Graphic Designer</p> 
+                <a href="#">Apply Now</a> 
+            </li> 
+            
+            <li> 
+                <h3>java Developer</h3> 
+                <p>Company: ICT Design</p> 
+                <p>Location: India</p> 
+                <p>Description: Good Java Developer</p> 
+                <a href="#">Apply Now</a> 
+            </li> 
+
+            <li> 
+                <h3>Software Developer</h3> 
+                <p>Company: Infosys</p> 
+                <p>Location: India</p> 
+                <p>Description: Good Software Developer</p> 
+                <a href="#">Apply Now</a> 
+            </li> 
+
+            <li> 
+                <h3>Graphic Designer</h3> 
+                <p>Company: XYZ Design</p> 
+                <p>Location: India</p> 
+                <p>Description: Good Graphic Designer</p> 
+                <a href="#">Apply Now</a> 
+            </li> 
+        </ul> 
+    </section> 
+    
+    <footer> 
+        <p>© 2023 Job Search Portal</p> 
+    </footer> 
+
+    <script>
+        document.getElementById('jobSearchForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const keywords = event.target.keywords.value;
+            const location = event.target.location.value;
+            const company = event.target.company.value;
+
+            // Simulate a search result (this could be replaced with an actual API call)
+            const results = `Searching for "${keywords}" jobs at "${company}" in "${location}"...`;
+            document.getElementById('searchResults').innerText = results;
+
+            // Here you can make an API call to fetch actual job listings based on the search
+            // Example:
+            // fetch('/api/jobs?keywords=' + encodeURIComponent(keywords) + '&location=' + encodeURIComponent(location) + '&company=' + encodeURIComponent(company))
+            //     .then(response => response.json())
+            //     .then(data => {
+            //         // Update the job listings based on the data returned
+            //     });
+        });
+    </script>
+</body> 
+
+</html> 
